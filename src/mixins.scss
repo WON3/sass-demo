@@ -1,0 +1,9 @@
+@mixin circle(){
+    border-radius: 50%;
+    border: 30px solid black;
+    background: black;
+}
+
+@mixin radius($radius){
+    border-radius: $radius
+}

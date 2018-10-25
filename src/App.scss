@@ -1,0 +1,33 @@
+@import 'variable.scss';
+@import 'mixins';
+
+.App-container {
+  height: 100vh;
+  width: 100%;
+  background: $grey;
+}
+
+.App-outer{
+  height: 300px;
+  margin: 30px;
+  background: $gold;
+
+  p {
+    color: pink;
+  }
+
+  div {
+    @include radius(10px);
+    background: red;
+    height: 15px;;
+  }
+
+  .second{
+    
+  }
+}
+
+
+.App-outer2{
+  @extend .App-outer;
+}
